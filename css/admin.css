@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 20px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0);
+    border-radius: 0 5px 5px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+    color: white;
+  }
+
+  #mySidenav a.active {
+    left: 0;
+    color: white;
+  }
+  
+  #about {
+    top: 22ch;
+    background-color: rgb(69, 0, 0);
+  }
+  
+  #blog {
+    top: 30ch;
+    background-color: rgb(69, 0, 0);
+  }
+  
+  #projects {
+    top: 40.5ch;
+    background-color: rgb(69, 0, 0);
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: rgb(69, 0, 0);
+  }
+
+  .tabContainer{
+    width: 90%;
+    height: 350px;
+    margin-left: auto;
+  }
+  .tabContainer .buttonContainer{
+    height: 15%;
+  }
+  .tabContainer .buttonContainer button{
+    display: none;
+  }
+  
+  .tabContainer .tabPanel{  /* inside page of tabs  */
+    height: 85%;  /* fit-content */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  

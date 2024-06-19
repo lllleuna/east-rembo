@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  #myBtn i.fa-solid {
+    color: #d6d6d6;
+    background-color: #545454;
+    border-radius: 30px;
+  }
+  #myBtn:hover {
+    transform: scale(1.5);
+  }
+div.homebody {
+    margin-top: 6%;
+    background-image: url("../Assets/eastBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+div.blur{
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , rgba(255, 255, 255, 0));
+}
+div.homebody-content p{
+    color: #fff;
+}
+div.homebody-content{
+    padding: 11ch 9ch;
+    width: 70%;
+    white-space: break-space;
+}
+
+p.welcome-text{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+p.bodycontent-header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 20px;
+    /* background: -webkit-linear-gradient(#1B262C, #0F4C75, #1B262C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+p.bodycontent-sub {
+  width: 70%;
+}
+
+
+div.homebody-content a{
+    text-decoration: none;
+}
+div.homebody-content button {
+    margin-top: 65px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: rgb(61, 10, 22);
+    background: linear-gradient(0deg, rgb(61, 10, 22) 0%, rgb(132, 32, 57) 100%);
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    border: none;
+   }
+   
+   div.homebody-content button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #f4d539;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   div.homebody-content button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   div.homebody-content button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   div.homebody-content button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+
+
+
+/* TABLET -------------------------*/
+   @media only screen and (max-width: 768px) {
+    p.bodycontent-header {
+        font-size: 25px;
+    }
+    div.homebody-content{
+        padding: 5ch 5ch;
+    }
+    p.welcome-text{
+        font-size: 15px;
+    }
+    p.bodycontent-sub{
+        font-size: 15px;
+    }
+    div.homebody {
+      margin-top: 10%;
+    }
+}
+
+/* MOBILE PHONE -------------------------*/
+@media only screen and (max-width: 600px) {
+    div.homebody-content{
+        padding: 5ch 2ch;
+    }
+    p.welcome-text{
+        font-size: 10px;
+    }
+    p.bodycontent-sub{
+        font-size: 10px;
+    }
+    div.homebody-content button span{
+        padding: 10px 17px;
+        font-size: 1em;
+    }
+    div.homebody-content{
+        width: 80%;
+    }
+  }
+
+
+/* ABOUT SECTION -------------------------------------------------------------------------- */
+div.about-section{
+    background-color: rgb(255, 255, 255);
+    color: rgb(57, 0, 0);
+    display: flex;
+    position: relative;
+  }
+  div.about-content {
+    margin: 80px 40px 150px 30px;
+    width: 900px;
+    font-size: 18px;
+  }
+  p.about-title {
+    font-size: 4ch;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 40px;
+  }
+
+  div.about-more {
+    position: absolute;
+    margin-left: 300px;
+    right: 5%;
+    bottom: 30px;
+    transition: font-size 0.3s;
+  }
+  div.about-more a{
+    color: rgb(57, 0, 0);
+    text-decoration: none;
+    border-bottom-width: 3.1px;
+    border-bottom-style: solid;
+    transition: transform 0.3s;
+  }
+  div.about-more:hover {
+    font-size: 18px;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    p.about-title  {
+        font-size: 2.5ch;
+    }
+    p.about-desc {
+        font-size: 1.3ch;
+    }
+  }
+
+
+  /* SERVICE SECTION -------------------------------------- */
+div.services-container {
+    margin: 50px 0px 140px 30px;
+    font-size: 18px;
+    position: relative;
+}
+div.services-container a {
+    text-decoration: none;
+    color: #000000;
+}
+p.servicelist-title {
+    font-size: 4ch;
+    padding-top: 50px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 70px;
+}
+div.service {
+    display: inline-block;
+    margin: 10px;
+    width: 18%;
+    background-color: rgb(205, 205, 205);
+    border-radius: 8px;
+    padding: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+div.service:hover {
+    transform: scale(1.1);
+}
+p.care-title {
+    font-size: 100%;
+    font-family: 'Archivo Black', sans-serif;
+}
+p.service-desc {
+    font-size: 80%;
+}
+i.fa-solid {
+    color: #000000;
+    font-size: 200%;
+}
+
+  /*  */
+  div.job-more {
+    position: absolute;
+    margin-left: 300px;
+    right: 5%;
+    bottom: -30px;
+  }
+  div.job-more a{
+    color: #0f0f0f;
+    text-decoration: none;
+    border-bottom-width: 3.1px;
+    border-bottom-style: solid;
+  }
+  div.job-more:hover {
+    font-size: 18px;
+  }
+  /*  */
+
+@media screen and (max-width: 800px) { 
+
+    div.service{ 
+        width: 45%; 
+    } 
+    p.servicelist-title {
+        font-size: 2.5ch;
+    }
+} 
+@media screen and (max-width: 500px) { 
+
+    div.service{ 
+        width: 85%; 
+    } 
+    
+} 
+
+/* BENEFITS ------------------------------------------------ */
+
+div.benefits-container {
+    position: relative;
+    background-color: rgb(69, 0, 0);
+    color: #fff;
+    padding: 50px 0px 60px 30px;
+}
+
+p.benefit-title {
+    font-size: 3.5ch;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+div.benefit-list {
+    text-align: center;
+}
+
+div.photos {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    width: 25%;
+}
+div.photos img {
+    border-radius: 8px;
+    width: 100%;
+}
+p.photo-desc {
+    font-size: 130%;
+}
+
+
+
+  
+
+@media screen and (max-width: 786px) { 
+
+    div.photos {
+        width: 40%;
+    }
+    p.benefit-title {
+        font-size: 2.5ch;
+    }
+    p.photo-desc {
+        font-size: 100%;
+    }
+} 
+@media screen and (max-width: 600px) {
+    div.photos {
+        width: 70%;
+    }
+    div.photos img {
+        width: 80%;
+    }
+}
+
+/* LOCATION EAST REMBO MAP -------------------------------- */
+
+div.location-container {
+    margin: 20px 0 50px 0;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: rgb(57, 0, 0);
+}
+div.left-text{
+    text-align: left;
+}
+div.loc {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+    padding-top: 20px;
+}
+p.header-location {
+    font-size: 150%;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 20px;
+}
+p.location {
+    font-size: 3.5ch;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 60px;
+}
+p.sub-location {
+    font-size: 1.5ch;
+    margin-bottom: 30px;
+}
+p.sub-location a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(57, 0, 0);
+}
+p.sub-location a:hover {
+    text-decoration: underline;
+}
+div.right-map img {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+div.right-map{
+    position: relative;
+    padding-bottom: 20px;
+    height: 20%;
+}
+div.right-map iframe {
+    width: 90%;
+}
+@media screen and (max-width: 786px) { 
+    p.location {
+        font-size: 2.5ch;
+    }
+    div.loc {
+        width: 80%;
+    }
+} 
+@media screen and (max-width: 600px) {
+    p.location {
+        font-size: 2.5ch;
+    }
+}
+
+
+/* SPONSORS --------------------------------------- */
+
+  div.sponsors {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  div.org-logo img{
+    margin: 5px;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 786px) {
+    div.org-logo img{
+        width: 100%;
+      }
+  }
+
+
+/* FOOTER QUOTES ------------------------------------------ */
+
+div.footer-quotes {
+    margin-top: 50px;
+    position: relative;
+    height: 80px;
+  }
+ div.f-qoutes {
+    position: absolute;
+    width: 70%;
+  }
+  div.f-quotes p {
+    margin: 0% 15%;
+    padding: 1.2ch 5ch;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #929292;
+    font-size: 3ch;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    div.footer-quotes {
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+/* ---------------------------------------------------------
+------------- ABOUT PAGE ----------------------------------
+------------------------------------------------------------ */
+
+
+div.aboutpg-header-container {
+    background-color: rgb(69, 0, 0);
+    display: flex;
+    padding: 7ch 7ch;
+    height: 40ch;
+    max-height: 40ch;
+    margin-top: 5%;
+  }
+  div.aboutpg-header {
+    width: 80ch;
+  }
+  div.aboutpg-header p.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5ch;
+    font-family: 'Archivo Black', sans-serif;
+    
+  }
+  div.aboutpg-header p.content {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  div.aboutpg-logo {
+    margin-left: 220px;
+  }
+  div.aboutpg-logo img {
+    margin-top: 40px;
+    height: 350px;
+    width: 350px;
+    max-height: 350px;
+    max-width: 350px;
+  }
+  
+  /* ---- ABOUT PAGE INTRODUCTION --------------------------------------------- */
+  
+  div.aboutpg-intro {
+    padding: 10ch 7ch;
+  
+  }
+  div.aboutpg-intro p.intro-title {
+    font-size: 3.5ch;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+  }
+  div.aboutpg-intro p.intro-content {
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 30px;
+  }
+  
+  /* ------ MISSION VSION ------------------------------------------------ */
+  
+  div.mv-container {
+    display: flex;
+    padding: 0ch 5ch;
+  }
+  hr.mv-line {
+    margin-left: 45%;
+    width: 50px;
+    margin-bottom: 20px;
+    height: 4px;
+    background-color: rgb(123, 8, 127);
+    background: linear-gradient(100deg, rgb(146, 43, 154) 0%, rgb(209, 84, 84) 100%);
+  }
+  div.mv-container div.mv {
+    margin: 1ch 8ch;
+    padding: 5ch 5ch;
+    background-color: rgba(48, 48, 48, 0.178);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30ch;
+  }
+  div.mv-container div.mv p.mv-title {
+    font-family: sans-serif;
+    font-size: 3ch;
+    text-transform: uppercase;
+  }
+  div.mv-container div.mv p.mv-content {
+    margin-top: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+  }
+  
