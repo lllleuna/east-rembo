@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect("database-east.mysql.database.azure.com", "angels", "Pa$\$word1", "helpdesk_system");
+$connection = mysqli_connect("eastdatabase.mysql.database.azure.com", "leuna", "Pa$\$word1", "helpdesk_system");
 require '../PAGES/config.php';
 
 if (isset($_POST["submit"])) {

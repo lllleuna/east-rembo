@@ -1,5 +1,5 @@
 <?php
-$host = "database-east.mysql.database.azure.com";
-$username = "angels";
+$host = "eastdatabase.mysql.database.azure.com";
+$username = "leuna";
 $password = "Pa$\$word1";
 $database = "helpdesk_system";
